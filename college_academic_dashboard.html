@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Academic Analytics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row g-0">
+    <aside class="col-lg-2 sidebar p-3">
+      <div class="d-flex align-items-center gap-2 mb-4 px-1 pt-1">
+        <div class="brand-mark">CA</div>
+        <div><div class="fw-bold">Campus Analytics</div><div class="small opacity-75">Academic dashboard</div></div>
+      </div>
+      <div class="small text-uppercase opacity-50 fw-bold px-2 mb-2">Workspace</div>
+      <nav class="nav nav-pills flex-column gap-1">
+        <a class="nav-link active" href="#overview">Overview</a>
+        <a class="nav-link" href="#students">Student backlog list</a>
+        <a class="nav-link" href="#subjects">Subject performance</a>
+        <a class="nav-link" href="#import">Import data</a>
+      </nav>
+      <div class="mt-5 p-3 rounded-3" style="background:#203554">
+        <div class="small fw-bold mb-1">Rules in use</div>
+        <div class="small opacity-75">Pass mark: 30 / 100</div>
+        <div class="small opacity-75">ATKT: 1–3 backlogs</div>
+        <div class="small opacity-75">Year down: 4+ backlogs</div>
+      </div>
+      <div class="small opacity-50 mt-4 px-2">Browser-only prototype</div>
+    </aside>
+
+    <main class="col-lg-10 main-content">
+      <header class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4" id="overview">
+        <div>
+          <div class="small text-uppercase fw-bold subtle mb-1">Department of Computer Science & Engineering</div>
+          <h1 class="h3 fw-bold mb-1">Academic performance overview</h1>
+          <div class="subtle">Track student backlogs, ATKT eligibility, and pass/fail rates by admission cohort.</div>
+        </div>
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+          <span class="small-pill" id="datasetBadge">Sample dataset · 50 students</span>
+          <button class="btn btn-outline-secondary btn-sm" id="resetBtn" type="button">Reset sample</button>
+        </div>
+      </header>
+
+      <div class="alert alert-info d-flex align-items-start gap-2 py-2 small" role="note">
+        <span class="fw-bold">Import note:</span>
+        <span>This plain JavaScript version reads <strong>CSV</strong>, not .xlsx directly. In Excel, open the <em>Consolidated Master (Sem 1-6)</em> sheet and use <strong>Save As → CSV UTF-8</strong>, then upload it below. No student data is sent to a backend.</span>
+      </div>
+
+      <section class="row g-3 mb-4" id="kpiCards"></section>
+
+      <section class="row g-3 mb-4">
+        <div class="col-xl-7">
+          <div class="panel h-100">
+            <div class="panel-heading d-flex justify-content-between align-items-center">
+              <div><h2 class="h6 fw-bold mb-1">Student outcome distribution</h2><div class="small subtle">Based on each student's total backlog count</div></div>
+              <span class="small-pill" id="completeCount">50 complete</span>
+            </div>
+            <div class="panel-body" id="outcomeBars"></div>
+          </div>
+        </div>
+        <div class="col-xl-5">
+          <div class="panel h-100">
+            <div class="panel-heading">
+              <h2 class="h6 fw-bold mb-1">Admission-year cohorts</h2>
+              <div class="small subtle">Sorted by admission year</div>
+            </div>
+            <div class="panel-body p-0">
+              <div class="table-responsive">
+                <table class="table table-sm mb-0">
+                  <thead><tr><th class="ps-3">Year</th><th>Students</th><th>Passed</th><th>ATKT</th><th class="pe-3">Year down</th></tr></thead>
+                  <tbody id="cohortRows"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel mb-4" id="students">
+        <div class="panel-heading d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <div><h2 class="h6 fw-bold mb-1">Student backlog register</h2><div class="small subtle">Search, filter, and inspect failed subjects for each student.</div></div>
+          <button class="btn btn-primary btn-sm" id="exportBtn" type="button">Export filtered CSV</button>
+        </div>
+        <div class="panel-body border-bottom">
+          <div class="row g-3">
+            <div class="col-md-4 col-xl-3">
+              <label class="filter-label" for="searchInput">Search student</label>
+              <input class="form-control form-control-sm" id="searchInput" placeholder="Name or roll number">
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <label class="filter-label" for="yearFilter">Admission year</label>
+              <select class="form-select form-select-sm" id="yearFilter"><option value="all">All years</option></select>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <label class="filter-label" for="branchFilter">Branch</label>
+              <select class="form-select form-select-sm" id="branchFilter"><option value="all">All branches</option></select>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <label class="filter-label" for="statusFilter">Academic status</label>
+              <select class="form-select form-select-sm" id="statusFilter">
+                <option value="all">All statuses</option>
+                <option value="clear">No backlogs / PASS</option>
+                <option value="atkt">ATKT eligible (1–3)</option>
+                <option value="year-down">Year down (4+)</option>
+                <option value="incomplete">Incomplete marks</option>
+              </select>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <label class="filter-label" for="sortFilter">Sort order</label>
+              <select class="form-select form-select-sm" id="sortFilter">
+                <option value="year-asc">Admission year: oldest first</option>
+                <option value="year-desc">Admission year: newest first</option>
+                <option value="backs-desc">Most backlogs first</option>
+                <option value="name-asc">Name A–Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead><tr>
+              <th class="ps-3">Admission year</th><th>Student</th><th>Branch</th><th>Percentage</th><th>Backs</th><th>Backlog status</th><th>ATKT eligibility</th><th class="pe-3">Final result</th>
+            </tr></thead>
+            <tbody id="studentRows"></tbody>
+          </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-center p-3 small subtle">
+          <span id="tableCount">Showing 50 students</span>
+          <span>Click <strong>Details</strong> in a row to inspect failed subjects.</span>
+        </div>
+      </section>
+
+      <section class="panel mb-4" id="subjects">
+        <div class="panel-heading">
+          <h2 class="h6 fw-bold mb-1">Subject-level pass/fail rate</h2>
+          <div class="small subtle">A subject pass is a mark of 30 or above. Missing marks are excluded and flagged separately.</div>
+        </div>
+        <div class="panel-body">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <div class="d-flex justify-content-between mb-3"><span class="fw-semibold">All valid subject marks</span><span class="small subtle" id="subjectTotals"></span></div>
+              <div id="subjectOverallBars"></div>
+            </div>
+            <div class="col-lg-7">
+              <div class="table-responsive">
+                <table class="table table-sm table-hover mb-0">
+                  <thead><tr><th>Subject</th><th>Appeared</th><th>Passed</th><th>Failed</th><th>Pass rate</th></tr></thead>
+                  <tbody id="subjectRows"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel mb-4" id="import">
+        <div class="panel-heading">
+          <h2 class="h6 fw-bold mb-1">Import student data</h2>
+          <div class="small subtle">Use the CSV export of the consolidated master sheet; the page auto-detects the header row.</div>
+        </div>
+        <div class="panel-body">
+          <div class="row g-3 align-items-end">
+            <div class="col-md-8">
+              <label class="filter-label" for="csvFile">Choose CSV file</label>
+              <input class="form-control" id="csvFile" type="file" accept=".csv,text/csv">
+              <div class="form-text">Expected fields: Roll No., Student Name, Branch, Admission Year, Graduation Year, then subject marks (OS, JS, DSA, etc.).</div>
+            </div>
+            <div class="col-md-4 d-grid"><button class="btn btn-dark" id="loadCsvBtn" type="button">Load CSV and recalculate</button></div>
+          </div>
+          <div id="importMessage" class="small mt-3 subtle" role="status"></div>
+        </div>
+      </section>
+
+      <footer class="small subtle pb-3">Prototype rules: mark below 30 = failed subject/backlog; 0 backlogs = PASS; 1–3 = PROMOTED WITH ATKT; 4+ = FAIL (YEAR DOWN). Confirm these rules with the official regulation before production use.</footer>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

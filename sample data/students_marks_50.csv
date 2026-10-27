@@ -1,0 +1,51 @@
+Roll No.,Name,Branch,Admission Year,Graduation Year,Sem 1 - OS,Sem 1 - JS,Sem 1 - DSA,Sem 2 - DBMS,Sem 2 - CN,Sem 2 - OOP,Sem 3 - DAA,Sem 3 - SE,Sem 3 - TOC,Sem 4 - COA,Sem 4 - WT,Sem 4 - MP,Sem 5 - AI,Sem 5 - CC,Sem 5 - IS,Sem 6 - CD,Sem 6 - BDA,Sem 6 - DS,Total Marks (Out of 1800),Percentage (%),Total Backlogs (Count < 30),ATKT Eligibility,Final Result
+2025CS001,Aarav Sharma,Computer Science & Engineering,2025,2029,78,85,72,82,88,79,77,74,93,73,91,93,98,87,72,88,83,71,1484,82.44%,0,Not Applicable (Passed All),PASS
+2025CS002,Diya Patel,Information Technology,2025,2029,65,74,58,70,68,62,70,87,76,92,90,92,87,83,77,84,88,78,1401,77.83%,0,Not Applicable (Passed All),PASS
+2025CS003,Rohan Verma,Computer Science & Engineering,2025,2029,24,62,55,45,58,60,44,48,56,41,40,59,41,57,57,73,51,37,908,50.44%,1,YES - Eligible for ATKT (1 Backlog),PROMOTED WITH ATKT
+2025CS004,Ananya Iyer,Artificial Intelligence & DS,2025,2029,88,92,90,85,95,91,87,79,96,90,89,98,97,81,88,76,92,72,1586,88.11%,0,Not Applicable (Passed All),PASS
+2025CS005,Ishaan Nair,Computer Science & Engineering,2025,2029,22,28,45,35,40,50,41,59,52,64,75,58,45,58,57,48,77,52,906,50.33%,2,YES - Eligible for ATKT (2 Backlogs),PROMOTED WITH ATKT
+2025CS006,Sneha Kulkarni,Information Technology,2025,2029,18,25,22,26,32,40,50,35,47,37,35,44,42,38,50,52,47,37,677,37.61%,4,NO - Ineligible (4 Backlogs > Max 3),FAIL (YEAR DOWN)
+2025CS007,Aditya Mehta,Computer Science & Engineering,2025,2029,55,64,70,60,58,65,77,96,71,95,80,82,78,72,76,88,98,92,1377,76.50%,0,Not Applicable (Passed All),PASS
+2025CS008,Pooja Reddy,Artificial Intelligence & DS,2025,2029,52,48,25,55,60,28,64,44,51,43,50,70,69,51,72,62,72,60,976,54.22%,2,YES - Eligible for ATKT (2 Backlogs),PROMOTED WITH ATKT
+2025CS009,Vikram Singh,Computer Science & Engineering,2025,2029,15,20,18,22,25,35,31,33,34,50,35,51,43,49,32,42,42,49,626,34.78%,5,NO - Ineligible (5 Backlogs > Max 3),FAIL (YEAR DOWN)
+2025CS010,Riya Gupta,Information Technology,2025,2029,72,80,68,75,82,70,91,93,73,91,98,87,94,78,94,90,80,73,1489,82.72%,0,Not Applicable (Passed All),PASS
+2025CS011,Tanvi Deshmukh,Computer Engineering,2025,2029,64,68,60,69,55,85,78,83,78,63,71,79,60,71,84,58,82,75,1283,71.28%,0,Not Applicable (Passed All),PASS
+2025CS012,Aryan Joshi,Computer Science & Engineering,2025,2029,79,96,90,86,89,76,74,81,94,75,87,94,86,70,89,80,85,70,1501,83.39%,0,Not Applicable (Passed All),PASS
+2025CS013,Meera Nambiar,Artificial Intelligence & DS,2025,2029,42,58,54,50,38,50,71,17,40,66,39,69,43,43,77,65,70,45,937,52.06%,1,YES - Eligible for ATKT (1 Backlog),PROMOTED WITH ATKT
+2025CS014,Siddharth Rao,Information Technology,2025,2029,63,71,82,74,68,85,61,84,72,79,78,77,61,77,64,67,76,75,1314,73.00%,0,Not Applicable (Passed All),PASS
+2025CS015,Kavya Menon,Computer Science & Engineering,2025,2029,81,84,98,86,84,73,77,77,72,80,70,88,87,77,88,77,70,72,1441,80.06%,0,Not Applicable (Passed All),PASS
+2025CS016,Kabir Malhotra,Computer Engineering,2025,2029,75,38,19,39,37,56,39,67,19,52,77,23,48,69,43,71,71,65,908,50.44%,3,YES - Eligible for ATKT (3 Backlogs),PROMOTED WITH ATKT
+2025CS017,Neha Chawla,Information Technology,2025,2029,62,80,70,80,68,61,58,58,76,68,66,68,68,69,82,78,56,76,1244,69.11%,0,Not Applicable (Passed All),PASS
+2025CS018,Rahul Bansal,Computer Science & Engineering,2025,2029,41,38,60,56,41,50,47,47,69,63,43,62,46,52,64,50,39,63,931,51.72%,0,Not Applicable (Passed All),PASS
+2025CS019,Anika Sen,Artificial Intelligence & DS,2025,2029,95,97,97,87,73,71,90,87,96,70,72,94,97,77,75,83,85,85,1531,85.06%,0,Not Applicable (Passed All),PASS
+2025CS020,Yashvardhan Singhania,Computer Science & Engineering,2025,2029,36,42,31,35,42,30,20,18,28,26,44,39,43,52,47,51,52,45,681,37.83%,4,NO - Ineligible (4 Backlogs > Max 3),FAIL (YEAR DOWN)
+2025CS021,Shreya Bhattacharya,Information Technology,2025,2029,59,61,64,61,85,56,73,78,72,56,78,65,56,56,73,70,71,84,1218,67.67%,0,Not Applicable (Passed All),PASS
+2025CS022,Varun Kapoor,Computer Science & Engineering,2025,2029,68,45,38,67,40,46,17,73,39,78,50,60,42,71,50,72,73,37,966,53.67%,1,YES - Eligible for ATKT (1 Backlog),PROMOTED WITH ATKT
+2025CS023,Prisha Hegde,Artificial Intelligence & DS,2025,2029,89,72,83,91,88,88,86,80,78,76,91,92,80,77,78,82,74,91,1496,83.11%,0,Not Applicable (Passed All),PASS
+2025CS024,Harshavardhan Rathi,Computer Engineering,2025,2029,54,64,55,39,35,64,71,41,39,69,48,67,51,43,57,39,50,58,944,52.44%,0,Not Applicable (Passed All),PASS
+2025CS025,Simran Kaur,Information Technology,2025,2029,64,60,69,81,72,77,64,74,80,75,71,55,76,81,72,64,84,76,1295,71.94%,0,Not Applicable (Passed All),PASS
+2025CS026,Devansh Saxena,Computer Science & Engineering,2025,2029,41,43,51,42,41,70,44,52,53,48,56,48,51,67,66,51,38,40,902,50.11%,0,Not Applicable (Passed All),PASS
+2025CS027,Avani Pillai,Artificial Intelligence & DS,2025,2029,90,83,96,78,71,70,80,94,74,90,78,75,93,84,87,92,83,87,1505,83.61%,0,Not Applicable (Passed All),PASS
+2025CS028,Kunal Gokhale,Information Technology,2025,2029,35,42,39,44,69,37,58,72,70,18,22,43,37,54,58,37,57,48,840,46.67%,2,YES - Eligible for ATKT (2 Backlogs),PROMOTED WITH ATKT
+2025CS029,Tara Sundaram,Computer Science & Engineering,2025,2029,76,62,76,58,66,79,72,83,82,68,74,78,59,84,84,62,82,60,1305,72.50%,0,Not Applicable (Passed All),PASS
+2025CS030,Manan Shah,Computer Engineering,2025,2029,35,43,14,35,40,26,43,51,27,37,38,16,52,33,20,31,45,17,603,33.50%,6,NO - Ineligible (6 Backlogs > Max 3),FAIL (YEAR DOWN)
+2025CS031,Ritika Agarwal,Information Technology,2025,2029,47,64,57,54,49,49,36,47,60,56,52,39,52,57,67,60,69,56,971,53.94%,0,Not Applicable (Passed All),PASS
+2025CS032,Ayush Trivedi,Computer Science & Engineering,2025,2029,70,73,98,78,75,88,78,71,73,89,83,81,93,95,80,83,89,86,1483,82.39%,0,Not Applicable (Passed All),PASS
+2025CS033,Bhavna Choudhary,Artificial Intelligence & DS,2025,2029,42,59,71,47,51,37,62,35,68,69,78,77,19,58,62,39,77,56,1007,55.94%,1,YES - Eligible for ATKT (1 Backlog),PROMOTED WITH ATKT
+2025CS034,Dhruv Mathur,Computer Science & Engineering,2025,2029,55,42,54,67,54,61,55,60,53,70,43,47,61,59,46,71,54,60,1012,56.22%,0,Not Applicable (Passed All),PASS
+2025CS035,Esha Venkatesh,Information Technology,2025,2029,72,81,55,64,64,61,68,80,73,74,75,65,69,69,69,76,61,71,1247,69.28%,0,Not Applicable (Passed All),PASS
+2025CS036,Farhan Akhtar,Computer Engineering,2025,2029,65,45,40,53,67,56,40,50,54,49,47,44,36,37,50,65,39,64,901,50.06%,0,Not Applicable (Passed All),PASS
+2025CS037,Gargi Samant,Artificial Intelligence & DS,2025,2029,83,98,90,88,76,92,92,82,85,82,77,74,90,92,70,98,94,97,1560,86.67%,0,Not Applicable (Passed All),PASS
+2025CS038,Himanshu Pandey,Computer Science & Engineering,2025,2029,41,28,62,49,46,68,64,38,70,50,42,64,43,64,26,24,70,73,922,51.22%,3,YES - Eligible for ATKT (3 Backlogs),PROMOTED WITH ATKT
+2025CS039,Ishita Bose,Information Technology,2025,2029,65,85,79,83,69,74,81,78,83,71,68,81,84,72,69,83,60,78,1363,75.72%,0,Not Applicable (Passed All),PASS
+2025CS040,Jayant Nanda,Computer Science & Engineering,2025,2029,65,63,51,50,52,68,66,50,52,63,39,53,50,52,56,55,69,40,994,55.22%,0,Not Applicable (Passed All),PASS
+2025CS041,Kriti Sanon,Artificial Intelligence & DS,2025,2029,74,74,77,82,92,74,92,76,72,83,83,80,87,84,83,71,76,96,1456,80.89%,0,Not Applicable (Passed All),PASS
+2025CS042,Lakshya Singhal,Information Technology,2025,2029,43,20,48,52,14,48,42,21,30,41,18,42,43,22,47,49,37,45,662,36.78%,5,NO - Ineligible (5 Backlogs > Max 3),FAIL (YEAR DOWN)
+2025CS043,Maya Krishnan,Computer Science & Engineering,2025,2029,62,63,68,70,55,67,65,76,76,80,67,78,60,81,69,84,59,74,1254,69.67%,0,Not Applicable (Passed All),PASS
+2025CS044,Nakul Shenoy,Computer Engineering,2025,2029,69,36,60,25,71,77,36,40,76,62,43,64,46,38,51,59,21,48,922,51.22%,2,YES - Eligible for ATKT (2 Backlogs),PROMOTED WITH ATKT
+2025CS045,Ojasvi Bhatia,Artificial Intelligence & DS,2025,2029,84,80,80,94,98,82,78,94,96,83,78,96,72,85,70,93,87,71,1521,84.50%,0,Not Applicable (Passed All),PASS
+2025CS046,Parth Soman,Information Technology,2025,2029,57,49,39,37,36,50,47,36,44,50,43,65,42,71,48,64,51,58,887,49.28%,0,Not Applicable (Passed All),PASS
+2025CS047,Radhika Apte,Computer Science & Engineering,2025,2029,60,74,74,85,78,77,58,79,81,60,85,64,58,73,55,84,64,73,1282,71.22%,0,Not Applicable (Passed All),PASS
+2025CS048,Sameer Kadam,Computer Engineering,2025,2029,59,60,47,39,72,50,41,54,42,71,37,57,69,62,58,39,67,56,980,54.44%,0,Not Applicable (Passed All),PASS
+2025CS049,Trisha Mukherjee,Information Technology,2025,2029,35,61,66,41,62,58,75,64,44,62,46,68,76,52,74,69,65,23,1041,57.83%,1,YES - Eligible for ATKT (1 Backlog),PROMOTED WITH ATKT
+2025CS050,Utkarsh Dixit,Computer Science & Engineering,2025,2029,20,48,18,40,27,37,27,32,18,44,17,44,23,49,51,42,40,30,607,33.72%,7,NO - Ineligible (7 Backlogs > Max 3),FAIL (YEAR DOWN)
